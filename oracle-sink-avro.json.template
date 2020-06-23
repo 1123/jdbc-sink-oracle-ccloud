@@ -1,0 +1,21 @@
+{
+    "name": "oracle-sink-connector",
+    "config": {
+        "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+        "topics": "input-for-oracle-sink",
+        "tasks.max": "1",
+        "confluent.topic.bootstrap.servers": "BOOTSTRAP_SERVERS",
+        "confluent.license": "", 
+        "poll.interval.ms": "10",
+        "confluent.topic.replication.factor": "3",
+        "confluent.topic.sasl.jaas.config": "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"CC_API_KEY\" password=\"CC_API_SECRET\";",
+        "confluent.topic.security.protocol":"SASL_SSL",
+        "confluent.topic.sasl.mechanism":"PLAIN",
+        "connection.url": "jdbc:oracle:thin:@db202006221305_high?TNS_ADMIN=/tmp/Wallet",
+        "connection.password.secure.key": "WALLET_PASS", 
+        "connection.user": "ORACLE_USER",
+        "connection.password": "ORACLE_PASS",
+        "auto.create": "true"
+    }
+}
+

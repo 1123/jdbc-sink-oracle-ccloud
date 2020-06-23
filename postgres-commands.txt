@@ -1,0 +1,5 @@
+psql -U postgres
+CREATE DATABASE test;
+\c test
+\dt
+select * from "input-for-postgres-sink";
