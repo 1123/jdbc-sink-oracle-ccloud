@@ -17,6 +17,8 @@ Before running this demo, you should have some basic familiarity with
 * Oracle DB
 * Confluent Cloud: https://docs.confluent.io/current/cloud/index.html 
 
+If you are interested in the JDBC Source Connector for Oracle, check out this tutorial from my colleague: https://github.com/ora0600/confluent-kafka-oracledb-cdc-light. 
+
 ### Prerequisites
 
 * `docker-compose`
