@@ -1,4 +1,5 @@
-echo '{ "u_quantity": 12, "u_price": 12.0, "u_name": "dishes" }' | kafka-avro-console-producer \
+echo '{ "u_quantity": 12, "u_price": 12.0, "u_name": "glasses" }
+{ "u_quantity": 12, "u_price": 12.0, "u_name": "ring" }' | kafka-avro-console-producer \
   --broker-list $BOOTSTRAP_SERVERS \
   --property schema.registry.url=$SCHEMA_REGISTRY_URL \
   --property basic.auth.credentials.source=USER_INFO \
